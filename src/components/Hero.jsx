@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
 import './Hero.css'
 
 function Hero() {
@@ -13,6 +13,14 @@ function Hero() {
           Building elegant solutions to complex problems.<br />
           Passionate about clean code and great user experiences.
         </p>
+        <a
+          href="/portfolio/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-btn"
+        >
+          <FaFileAlt /> Resume
+        </a>
         <div className="hero-links">
           <a
             href="https://github.com/Xeposem"
