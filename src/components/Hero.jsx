@@ -6,6 +6,10 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-glow" />
+      <div className="hero-photo">
+        <div className="photo-shadow" />
+        <img src={profileImg} alt="William Du at Mt. Fuji" />
+      </div>
       <div className="hero-content">
         <h1 className="hero-name">William Du</h1>
         <p className="hero-title">Software Engineer</p>
@@ -40,9 +44,6 @@ function Hero() {
             <FaLinkedin /> LinkedIn
           </a>
         </div>
-      </div>
-      <div className="hero-photo">
-        <img src={profileImg} alt="William Du at Mt. Fuji" />
       </div>
     </section>
   )
