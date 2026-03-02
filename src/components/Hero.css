@@ -110,7 +110,7 @@
 }
 
 .hero-links {
-  display: flex;
+  display: inline-flex;
   gap: 16px;
 }
 
