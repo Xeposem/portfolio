@@ -19,14 +19,15 @@ function Hero() {
           Sometimes I use my Computer and Software Engineering Degrees when I'm not playing tennis, challenging my body, or searching for great food.
         </p>
         <div className="hero-actions">
-        <a
-          href="/portfolio/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="resume-btn"
-        >
-          <FaFileAlt /> Resume
-        </a>
+          <a
+            href="/portfolio/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-btn"
+          >
+            <FaFileAlt /> Resume
+          </a>
+        </div>
         <div className="hero-links">
           <a
             href="https://github.com/Xeposem"
@@ -44,7 +45,6 @@ function Hero() {
           >
             <FaLinkedin /> LinkedIn
           </a>
-        </div>
         </div>
       </div>
     </section>
