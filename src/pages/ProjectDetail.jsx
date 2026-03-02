@@ -16,7 +16,7 @@ function ProjectDetail() {
         </nav>
         <div className="detail-not-found">
           <h2>Project not found</h2>
-          <Link to="/" className="back-btn"><FaArrowLeft /> Back Home</Link>
+          <Link to="/projects" className="back-btn"><FaArrowLeft /> Back to Projects</Link>
         </div>
       </div>
     )
@@ -26,13 +26,17 @@ function ProjectDetail() {
     <div className="detail-page">
       <nav className="navbar">
         <Link to="/" className="nav-logo">WD</Link>
+        <div className="nav-links">
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/projects" className="nav-link active">Projects</Link>
+        </div>
       </nav>
 
       <div className="detail-container">
         <div className="detail-left">
           <ScrollReveal>
-            <Link to="/" className="back-btn">
-              <FaArrowLeft /> Back
+            <Link to="/projects" className="back-btn">
+              <FaArrowLeft /> Back to Projects
             </Link>
           </ScrollReveal>
 

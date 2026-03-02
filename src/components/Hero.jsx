@@ -15,9 +15,10 @@ function Hero() {
         <p className="hero-title">Software Engineer</p>
         <p className="hero-location">Union City, CA</p>
         <p className="hero-bio">
-          Building elegant solutions to complex problems.
-          Passionate about clean code and great user experiences.
+          Computer Engineer pushing the boundaries of my mind and body alike - drawn to technologies, from hardware and architecture, to distributed systems and agentic AI.
+          Sometimes I use my Computer and Software Engineering Degrees when I'm not playing tennis, challenging my body, or searching for great food.
         </p>
+        <div className="hero-actions">
         <a
           href="/portfolio/resume.pdf"
           target="_blank"
@@ -43,6 +44,7 @@ function Hero() {
           >
             <FaLinkedin /> LinkedIn
           </a>
+        </div>
         </div>
       </div>
     </section>

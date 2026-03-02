@@ -88,6 +88,10 @@
   margin-bottom: 32px;
 }
 
+.hero-actions {
+  clear: left;
+}
+
 .resume-btn {
   display: inline-flex;
   align-items: center;

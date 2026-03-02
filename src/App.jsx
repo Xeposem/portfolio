@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import LoadingAnimation from './components/LoadingAnimation'
 
@@ -23,7 +24,8 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project/:slug" element={<ProjectDetail />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
     </div>
   )
