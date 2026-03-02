@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  padding: 120px 80px 80px;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  top: -50px;
+  right: 10%;
+  pointer-events: none;
+  animation: glowFloat 6s ease-in-out infinite;
+}
+
+@keyframes glowFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, 20px); }
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  animation: heroSlideIn 0.8s ease forwards;
+}
+
+@keyframes heroSlideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-name {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.hero-location {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.hero-bio {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #E2E8F0;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.social-btn:hover {
+  border-color: var(--accent);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 24px 48px;
+  }
+  .hero-name {
+    font-size: 40px;
+  }
+  .hero-title {
+    font-size: 22px;
+  }
+  .hero-glow {
+    width: 300px;
+    height: 300px;
+    right: -50px;
+    top: 0;
+  }
+}

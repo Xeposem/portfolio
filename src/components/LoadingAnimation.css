@@ -1,0 +1,53 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: loadingFadeOut 0.4s ease forwards 1.4s;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.loading-logo {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--accent);
+  animation: loadingPulse 1s ease infinite;
+}
+
+.loading-bar {
+  width: 160px;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-bold), var(--accent));
+  border-radius: 2px;
+  animation: loadingProgress 1.4s ease forwards;
+}
+
+@keyframes loadingProgress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes loadingPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes loadingFadeOut {
+  to { opacity: 0; pointer-events: none; }
+}
