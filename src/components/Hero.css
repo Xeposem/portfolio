@@ -23,7 +23,6 @@
 
 .hero-inner {
   position: relative;
-  max-width: 900px;
   animation: heroSlideIn 0.8s ease forwards;
 }
 
@@ -89,7 +88,6 @@
 }
 
 .hero-actions {
-  clear: left;
 }
 
 .resume-btn {
