@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
+import profileImg from '../assets/profile.jpg'
 import './Hero.css'
 
 function Hero() {
@@ -39,6 +40,9 @@ function Hero() {
             <FaLinkedin /> LinkedIn
           </a>
         </div>
+      </div>
+      <div className="hero-photo">
+        <img src={profileImg} alt="William Du at Mt. Fuji" />
       </div>
     </section>
   )
