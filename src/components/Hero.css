@@ -2,10 +2,6 @@
   position: relative;
   padding: 120px 80px 80px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
 }
 
 .hero-glow {
@@ -25,15 +21,45 @@
   50% { transform: translate(-20px, 20px); }
 }
 
-.hero-content {
+.hero-inner {
   position: relative;
-  max-width: 480px;
+  max-width: 900px;
   animation: heroSlideIn 0.8s ease forwards;
 }
 
 @keyframes heroSlideIn {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Float the photo so text wraps along the circle's curve */
+.hero-photo {
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 360px;
+  shape-outside: circle(50%);
+  margin-right: 40px;
+  margin-bottom: 16px;
+}
+
+.photo-shadow {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: #0a0e1a;
+  box-shadow: 0 0 40px 10px rgba(5, 8, 20, 0.6);
+  z-index: 0;
+}
+
+.hero-photo img {
+  position: relative;
+  z-index: 1;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--border);
 }
 
 .hero-name {
@@ -105,37 +131,19 @@
   background: rgba(99, 102, 241, 0.1);
 }
 
-.hero-photo {
-  position: relative;
-  flex-shrink: 0;
-  width: 300px;
-  height: 300px;
-  animation: heroSlideIn 1s ease forwards;
-}
-
-.photo-shadow {
-  position: absolute;
-  inset: -10px;
-  border-radius: 50%;
-  background: #0a0e1a;
-  box-shadow: 0 0 40px 10px rgba(5, 8, 20, 0.6);
-  z-index: 0;
-}
-
-.hero-photo img {
-  position: relative;
-  z-index: 1;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--border);
-}
-
 @media (max-width: 768px) {
   .hero {
     padding: 80px 24px 48px;
-    flex-direction: column;
+  }
+  .hero-photo {
+    float: none;
+    margin: 0 auto 24px;
+    width: 260px;
+    height: 260px;
+  }
+  .hero-photo img {
+    width: 260px;
+    height: 260px;
   }
   .hero-name {
     font-size: 40px;
@@ -148,13 +156,5 @@
     height: 300px;
     right: -50px;
     top: 0;
-  }
-  .hero-photo {
-    width: 220px;
-    height: 220px;
-  }
-  .hero-photo img {
-    width: 220px;
-    height: 220px;
   }
 }

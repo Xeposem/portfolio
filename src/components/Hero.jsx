@@ -6,16 +6,16 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-glow" />
-      <div className="hero-photo">
-        <div className="photo-shadow" />
-        <img src={profileImg} alt="William Du at Mt. Fuji" />
-      </div>
-      <div className="hero-content">
+      <div className="hero-inner">
+        <div className="hero-photo">
+          <div className="photo-shadow" />
+          <img src={profileImg} alt="William Du at Mt. Fuji" />
+        </div>
         <h1 className="hero-name">William Du</h1>
         <p className="hero-title">Software Engineer</p>
         <p className="hero-location">Union City, CA</p>
         <p className="hero-bio">
-          Building elegant solutions to complex problems.<br />
+          Building elegant solutions to complex problems.
           Passionate about clean code and great user experiences.
         </p>
         <a
@@ -36,7 +36,7 @@ function Hero() {
             <FaGithub /> GitHub
           </a>
           <a
-            href="https://linkedin.com/in/williamdu"
+            href="https://linkedin.com/in/WilliamDu712"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn"
