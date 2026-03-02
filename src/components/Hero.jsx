@@ -15,7 +15,10 @@ function Hero() {
         <p className="hero-title">Software Engineer</p>
         <p className="hero-location">Union City, CA</p>
         <p className="hero-bio">
-          Computer Engineer pushing the boundaries of my mind and body alike - drawn to technologies, from hardware and architecture, to distributed systems and agentic AI.
+          Computer Engineer pushing the boundaries of both my mind and body. 
+          <br></br>
+          Drawn to technologies, from hardware and architecture, to distributed systems and agentic AI.
+          <br></br>
           Sometimes I use my Computer and Software Engineering Degrees when I'm not playing tennis, challenging my body, or searching for great food.
         </p>
         <div className="hero-actions">
