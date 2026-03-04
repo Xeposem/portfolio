@@ -81,15 +81,23 @@ function ProjectDetail() {
 
         <div className="detail-right">
           <ScrollReveal delay={200}>
-            <div
-              className="detail-preview"
-              style={{ background: `${project.color}10`, borderColor: `${project.color}30` }}
-            >
-              <span className="preview-icon" style={{ color: `${project.color}60` }}>
-                {project.icon}
-              </span>
-              <span className="preview-label">Project Preview</span>
-            </div>
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="detail-image"
+              />
+            ) : (
+              <div
+                className="detail-preview"
+                style={{ background: `${project.color}10`, borderColor: `${project.color}30` }}
+              >
+                <span className="preview-icon" style={{ color: `${project.color}60` }}>
+                  {project.icon}
+                </span>
+                <span className="preview-label">Project Preview</span>
+              </div>
+            )}
           </ScrollReveal>
         </div>
       </div>

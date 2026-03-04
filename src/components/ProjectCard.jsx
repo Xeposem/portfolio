@@ -8,12 +8,16 @@ function ProjectCard({ project, index }) {
         className="card-thumbnail"
         style={{ background: `${project.color}15` }}
       >
-        <span
-          className="card-icon"
-          style={{ color: `${project.color}80` }}
-        >
-          {project.icon}
-        </span>
+        {project.image ? (
+          <img src={project.image} alt={project.title} className="card-image" />
+        ) : (
+          <span
+            className="card-icon"
+            style={{ color: `${project.color}80` }}
+          >
+            {project.icon}
+          </span>
+        )}
       </div>
       <div className="card-body">
         <h3 className="card-title">{project.title}</h3>

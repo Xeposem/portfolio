@@ -1,36 +1,17 @@
+import mangaBuddyImg from "../assets/manga-buddy.png";
+
 const projects = [
   {
-    slug: "taskflow",
-    title: "TaskFlow",
-    subtitle: "A task management app",
+    slug: "manga-buddy",
+    title: "Manga Buddy",
+    subtitle: "A manga translation and annotation tool",
     description:
-      "TaskFlow is a comprehensive task management application designed to help teams stay organized and productive. Built with a focus on simplicity and usability, it features drag-and-drop task boards, priority levels, due dates, and real-time collaboration. The app supports multiple workspaces, customizable workflows, and integrations with popular tools like Slack and GitHub.",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Socket.io"],
-    color: "#6366F1",
-    icon: "✓",
-    repo: "https://github.com/Xeposem/taskflow",
-  },
-  {
-    slug: "weathervue",
-    title: "WeatherVue",
-    subtitle: "A real-time weather dashboard",
-    description:
-      "WeatherVue is a real-time weather dashboard that provides interactive maps, detailed forecasts, and location-based alerts. It pulls data from multiple weather APIs and presents it in a clean, intuitive interface with beautiful visualizations and responsive charts.",
-    tags: ["Vue", "API", "Chart.js", "OpenWeather"],
-    color: "#0EA5E9",
-    icon: "☁",
-    repo: "https://github.com/Xeposem/weathervue",
-  },
-  {
-    slug: "devconnect",
-    title: "DevConnect",
-    subtitle: "A developer networking platform",
-    description:
-      "DevConnect is a developer networking platform with code sharing and mentorship features. It connects developers based on their tech stacks, interests, and experience levels. The platform includes real-time chat, code review tools, and a mentorship matching system.",
-    tags: ["Python", "Django", "PostgreSQL", "WebSockets"],
-    color: "#10B981",
-    icon: "⟨⟩",
-    repo: "https://github.com/Xeposem/devconnect",
+      "Manga Buddy is a desktop application that translates and annotates manga in real time. Capture any region of your screen and the app detects text using PaddleOCR and manga-ocr, then translates it to English or adds phonetic annotations like pinyin, furigana, romaji, or Korean romanization. It features automatic language detection for Chinese, Japanese, and Korean, smart collision-aware text placement, and a dark-themed PyQt5 interface.",
+    tags: ["Python", "PaddleOCR", "PyQt5", "manga-ocr", "OpenCV"],
+    color: "#E94560",
+    icon: "漫",
+    image: mangaBuddyImg,
+    repo: "https://github.com/Xeposem/manga-buddy",
   },
 ];
 
