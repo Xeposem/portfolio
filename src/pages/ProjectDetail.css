@@ -118,10 +118,22 @@
   color: var(--text-muted);
 }
 
+.detail-image-block {
+  margin-bottom: 24px;
+}
+
 .detail-image {
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--border);
+}
+
+.detail-image-label {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 8px;
 }
 
 .detail-not-found {

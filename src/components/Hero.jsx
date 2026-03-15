@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
-import profileImg from '../assets/profile.jpg'
+import profileImg from '../assets/profile/profile.jpg'
 import './Hero.css'
 
 function Hero() {
